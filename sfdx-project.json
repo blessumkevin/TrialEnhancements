@@ -6,7 +6,12 @@
       "path": "force-app",
       "default": true,
       "package": "Trial_Enhancements",
-      "versionDescription": ""
+      "versionDescription": "",
+       "dependencies": [
+        {
+          "package": "Copado_Deployer",
+          "versionNumber": "22.0"
+        }
     }
   ],
   "name": "project",
@@ -14,6 +19,7 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "61.0",
   "packageAliases": {
-    "Trial_Enhancements": "0Hoa50000002MhBCAU"
+    "Trial_Enhancements": "0Hoa50000002MhBCAU",
+    "Copado_Deployer": "04t5p000001MLqS"
   }
 }
