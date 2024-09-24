@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
+      "versionNumber": "0.1.0.1",
       "path": "force-app",
       "default": true,
       "package": "Trial_Enhancements",
