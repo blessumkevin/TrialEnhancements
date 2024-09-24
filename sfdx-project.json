@@ -9,8 +9,7 @@
       "versionDescription": "",
        "dependencies": [
         {
-          "package": "Copado_Deployer",
-          "versionNumber": "22.0"
+          "package": "Copado_Deployer@22.0"
         }
        ]
     }
