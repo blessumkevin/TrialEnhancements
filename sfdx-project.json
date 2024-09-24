@@ -7,11 +7,11 @@
       "default": true,
       "package": "Trial_Enhancements",
       "versionDescription": "",
-       "dependencies": [
+      "dependencies": [
         {
           "package": "Copado_Deployer@22.0"
         }
-       ]
+      ]
     }
   ],
   "name": "project",
@@ -20,6 +20,7 @@
   "sourceApiVersion": "61.0",
   "packageAliases": {
     "Trial_Enhancements": "0Hoa50000002MhBCAU",
-    "Copado_Deployer@22.0": "04t5p000001MLqS"
+    "Copado_Deployer@22.0": "04t5p000001MLqS",
+    "Trial_Enhancements@0.1.0-1-main": "04ta5000000v93NAAQ"
   }
 }
