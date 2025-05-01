@@ -22,9 +22,21 @@
         <name>Step_1</name>
     </approvalStep>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <finalApprovalActions>
+        <action>
+            <name>Update_Approval_Status_To_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
     <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Update_Approval_Status_To_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
-    <label>Promotion Approval</label>
+    <label>User Story Approval</label>
     <processOrder>1</processOrder>
     <recordEditability>AdminOnly</recordEditability>
     <showApprovalHistory>true</showApprovalHistory>
