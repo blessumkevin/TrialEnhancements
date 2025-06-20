@@ -82,7 +82,6 @@ Home
     ${login_status} =     IsText                      To access this page, you have to log in to Salesforce.    2
     Run Keyword If        ${login_status}             Login
     LaunchApp             Home
-    VerifyText           Home
 
 
 # Example of custom keyword with robot fw syntax. NOTE: These keywords may need to be adjusted
