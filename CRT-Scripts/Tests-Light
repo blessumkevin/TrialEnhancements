@@ -1,0 +1,37 @@
+# NOTE: readme.txt contains important information you need to take into account
+# before running this suite.
+
+*** Settings ***
+Library    QForce
+Resource                      ../resources/common.robot
+Suite Setup                   Setup Browser
+Suite Teardown                End suite
+
+
+*** Test Cases ***
+Create A Case
+
+    
+    Appstate    Home
+    LaunchApp    Cases
+    ClickText     New
+    UseModal      On
+    PickList     *Status    Nuevo
+    PickList    Type    Pregunta
+    PickList    Case Reason    Nuevo problema
+    UseModal      Off                         #Turn off UseModal to interact with the error notification.
+    ClickText     Save    partial_match=False
+    VerifyText    We hit a snag.
+    VerifyText    Review the following fields
+    UseModal      On
+    PickList    *Case Origin    Web
+    ClickText   Save                        partial_match=false
+
+
+    #Delete Case Record
+
+    ClickText    Delete    anchor=Close this window
+    UseModal    On
+    ClickText    Delete
+    UseModal    Off
+    
