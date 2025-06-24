@@ -394,16 +394,6 @@
                 <identifier>RecordRecordTypeIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Approval_Status__c</fieldItem>
-                <identifier>RecordApproval_Status__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-6b4711d7-a075-4926-93aa-a6bc2af7c729</name>
         <type>Facet</type>
     </flexiPageRegions>
