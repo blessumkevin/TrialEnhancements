@@ -3324,10 +3324,6 @@
                     <value>copado__User_Story__c.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>Prestons__r</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
                     <name>relatedListDisplayType</name>
                     <value>ADVGRID</value>
                 </componentInstanceProperties>
