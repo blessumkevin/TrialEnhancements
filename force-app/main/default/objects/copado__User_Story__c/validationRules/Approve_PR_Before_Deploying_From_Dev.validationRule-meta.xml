@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approve_PR_Before_Deploying_From_Dev</fullName>
+    <active>false</active>
+    <description>Any environment that contains the name &quot;Dev&quot; will first require a PR to be approved before it can be deployed upstream.</description>
+    <errorConditionFormula>CONTAINS(copado__Environment__r.Name, &quot;Dev&quot;) &amp;&amp; copado__Pull_Requests_Approved__c = FALSE &amp;&amp; (copado__Promote_Change__c = true || copado__Promote_and_Deploy__c = true)</errorConditionFormula>
+    <errorMessage>A Pull Request must be approved before deploying upstream.</errorMessage>
+</ValidationRule>
