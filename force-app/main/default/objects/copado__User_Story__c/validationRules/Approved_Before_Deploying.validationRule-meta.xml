@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approved_Before_Deploying</fullName>
+    <active>false</active>
+    <description>This validation rule requires a Salesforce Native Approval Process to take place and be approved before the User Story can be a deployment candidate.</description>
+    <errorConditionFormula>NOT(ISPICKVAL(Approval_Status__c, &quot;Approved&quot;)) &amp;&amp;
+(copado__Promote_Change__c = TRUE || copado__Promote_and_Deploy__c = TRUE)</errorConditionFormula>
+    <errorMessage>This User Story must first be approved before it can be a candidate for deployment. Use the &quot;Submit For Approval&quot; button in the top right.</errorMessage>
+</ValidationRule>
