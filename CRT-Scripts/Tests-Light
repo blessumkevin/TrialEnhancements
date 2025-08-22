@@ -12,7 +12,8 @@ Suite Teardown                End suite
 Create A Case
 
     
-    Appstate    Home
+    Home
+    Sleep        6
     LaunchApp    Cases
     ClickText     New
     UseModal      On
