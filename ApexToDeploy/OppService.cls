@@ -34,7 +34,7 @@ public without sharing class OppService {
         if (b == null) { result += 'B:null'; }
         if (a > 10) { result += 'A>10'; } else if (a > 5) { result += 'A>5'; } else { result += 'A<=5'; }
         if (b > 0) result += 'B>0';
-        if (c != null && c % 2 == 0) result += 'C even';
+        if (c != null && Math.mod(c, 2) == 0) result += 'C even'; // <-- FIXED LINE
         // nested for loops (bad: potential O(n^2) with large input)
         for (Integer i = 0; i < 3; i++) {
             for (Integer j = 0; j < 3; j++) {
